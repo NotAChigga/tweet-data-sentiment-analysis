@@ -67,7 +67,3 @@ df['polarity'] = df.apply(lambda x: tb.TextBlob(x['text']).sentiment.polarity, a
 df['polarity'] = df['polarity'].astype(float)
 
 df.to_csv('tweet_data_processed.csv')
-
-
-
-
